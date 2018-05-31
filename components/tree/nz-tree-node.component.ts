@@ -29,7 +29,7 @@ import { NzTreeService } from './nz-tree.service';
         (contextmenu)="_contextMenuNode($event,nzTreeNode)"
     >
       <ng-container *ngIf="nzShowExpand">
-                <span
+                <span 
                   class="ant-tree-switcher"
                   [class.ant-tree-switcher_open]="nzTreeNode.isExpanded && !nzTreeNode.isLeaf && !nzTreeNode.isLoading"
                   [class.ant-tree-switcher_close]="!nzTreeNode.isExpanded && !nzTreeNode.isLeaf && !nzTreeNode.isLoading"
